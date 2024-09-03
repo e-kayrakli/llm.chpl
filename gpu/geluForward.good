@@ -1,0 +1,8 @@
+Using kernel 1
+Checking block size 32
+Checking block size 64
+Checking block size 128
+Checking block size 256
+Checking block size 512
+Checking block size 1024
+All results match. Starting benchmarks.
