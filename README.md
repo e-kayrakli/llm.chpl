@@ -12,7 +12,8 @@ Compared to the reference, this version is:
 
 This version is based on a relatively [earlier
 commit](https://github.com/karpathy/llm.c/tree/8386e5393c61ec2faf706f3040e68127c2f08398)
-of llm.c. We are still in the early stages of adding standalone GPU kernels.
+of llm.c. We are still in the early stages of adding standalone GPU kernels. The
+current GPU kernels have been contributed by @ShreyasKhandekar.
 
 ## Quick start
 
