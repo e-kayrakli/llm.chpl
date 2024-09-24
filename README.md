@@ -1,16 +1,18 @@
 ## Chapel port of [llm.c](https://github.com/karpathy/llm.c).
 
 This is an LLM implementation in [Chapel](chapel-lang.org) based on llm.c
-Specifically, this is based on a relatively [earlier
+Compared to the reference, this version is:
+
+- _more parallel_, as it relies on Chapel's parallel constructs like `forall`,
+  `reduce` which are more natural to use while delivering better performance,
+- _more succinct_, as Chapel's multidimensional arrays are a natural fit for
+  tensor programming for LLMs,
+- _more user-friendly_, as there is no need for dynamic memory management as in
+  C.
+
+This version is based on a relatively [earlier
 commit](https://github.com/karpathy/llm.c/tree/8386e5393c61ec2faf706f3040e68127c2f08398)
-of llm.c.
-
-While the base version is relatively succinct, it still relies on pointer
-arithmetic and explicit memory management in C. This version uses Chapel's
-multidimensional array support and classes to reduce code complexity
-significantly without big hits on performance.
-
-We are still in the early stages of adding standalone GPU kernels.
+of llm.c. We are still in the early stages of adding standalone GPU kernels.
 
 ## Quick start
 
